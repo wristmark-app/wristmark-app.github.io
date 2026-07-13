@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- 极深暖黑色背景 -->
+  <rect width="1024" height="1024" fill="#1E0A10" />
+  
+  <g id="magnet-top">
+    <!-- 金黄色 (Amber): 代表思维的活力与发散 -->
+    <path d="M 362,436 L 362,350 A 150,150 0 0 1 662,350 L 662,436" fill="none" stroke="#F59E0B" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+  <g id="mark-line">
+    <!-- 鲜红色 (Crimson): 极度醒目的警示红色，高亮打点的瞬间 -->
+    <line x1="262" y1="512" x2="762" y2="512" stroke="#E11D48" stroke-width="80" stroke-linecap="round" />
+  </g>
+  <g id="magnet-bottom">
+    <!-- 金黄色 (Amber): 保持闭合胶囊形态 -->
+    <path d="M 362,588 L 362,674 A 150,150 0 0 0 662,674 L 662,588" fill="none" stroke="#F59E0B" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+</svg>

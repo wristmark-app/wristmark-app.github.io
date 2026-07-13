@@ -1,0 +1,6 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Element 1: Solid Background -->
+  <rect width="1024" height="1024" fill="#0D222B"/>
+  <!-- Element 2: Compass & Star Path -->
+  <path d="M 952 512 A 440 440 0 1 0 72 512 A 440 440 0 1 0 952 512 M 512 192 L 592 432 L 832 512 L 592 592 L 512 832 L 432 592 L 192 512 L 432 432 Z" fill="none" stroke="#00FFB2" stroke-width="64" stroke-linejoin="round"/>
+</svg>

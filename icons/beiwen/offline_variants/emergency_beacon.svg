@@ -1,0 +1,13 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium Gradient for Emergency Beacon -->
+    <linearGradient id="beaconGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3B30" />
+      <stop offset="100%" stop-color="#FF9F0A" />
+    </linearGradient>
+  </defs>
+  <!-- Element 1: Pure Obsidian Deep Space Background -->
+  <rect width="1024" height="1024" fill="#050505"/>
+  <!-- Element 2: Signal Arch with Radiant Core Pulse Concept -->
+  <path d="M 256 704 Q 512 192 768 704 M 512 650 A 54 54 0 1 1 511.9 650 Z" fill="none" stroke="url(#beaconGrad)" stroke-width="96" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

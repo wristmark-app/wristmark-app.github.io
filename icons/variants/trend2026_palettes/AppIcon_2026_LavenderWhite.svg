@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Scheme 1: Warm Lavender + Electric White -->
+  <!-- 暖紫深黑背景，贴近 Claude / Perplexity 等 2026 AI 助理视觉语言 -->
+  <rect width="1024" height="1024" fill="#160D2B" />
+  
+  <g id="magnet-top">
+    <!-- 柔薰衣草紫 (Soft Lavender): 智能、温暖、亲切，不再冷酷极客 -->
+    <path d="M 362,436 L 362,350 A 150,150 0 0 1 662,350 L 662,436" fill="none" stroke="#A78BFA" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+  <g id="mark-line">
+    <!-- 纯净白 (Clean White): 极度克制但对比绝对充分，锚定唯一焦点 -->
+    <line x1="262" y1="512" x2="762" y2="512" stroke="#F5F3FF" stroke-width="80" stroke-linecap="round" />
+  </g>
+  <g id="magnet-bottom">
+    <path d="M 362,588 L 362,674 A 150,150 0 0 0 662,674 L 662,588" fill="none" stroke="#A78BFA" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+</svg>

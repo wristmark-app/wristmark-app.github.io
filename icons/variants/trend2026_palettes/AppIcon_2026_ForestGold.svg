@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Scheme 3: Deep Forest + Warm Gold -->
+  <!-- 贴近 2026 "自然-科技融合"溢价美学，Headspace / Calm 进化方向 -->
+  <rect width="1024" height="1024" fill="#0D1F15" />
+  
+  <g id="magnet-top">
+    <!-- 柔薄荷鼠尾草 (Soft Sage): 相比旧版霓虹绿更克制内敛，高级感十足 -->
+    <path d="M 362,436 L 362,350 A 150,150 0 0 1 662,350 L 662,436" fill="none" stroke="#6EE7B7" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+  <g id="mark-line">
+    <!-- 蜂蜜暖金 (Honey Gold): 有质感的金色标注，暗示"值得珍藏的洞见" -->
+    <line x1="262" y1="512" x2="762" y2="512" stroke="#FCD34D" stroke-width="80" stroke-linecap="round" />
+  </g>
+  <g id="magnet-bottom">
+    <path d="M 362,588 L 362,674 A 150,150 0 0 0 662,674 L 662,588" fill="none" stroke="#6EE7B7" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+</svg>

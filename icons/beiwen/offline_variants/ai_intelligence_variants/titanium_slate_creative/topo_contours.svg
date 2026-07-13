@@ -1,0 +1,40 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Solid Dark Onyx Base Gradient -->
+    <radialGradient id="onyxBase" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#14161D" />
+      <stop offset="100%" stop-color="#050608" />
+    </radialGradient>
+
+    <!-- Topographic contour wireframes with glowing contrast edge paths -->
+    <!-- Mimics terrain mapping, wilderness trekking and navigating offline -->
+    <pattern id="topoMapBase" width="1024" height="1024" patternUnits="userSpaceOnUse">
+      <rect width="1024" height="1024" fill="url(#onyxBase)"/>
+      <!-- Soft wireframe contour ridges with gold-desert color accents, curving fluidly in background -->
+      <path d="M -100 200 Q 150 150 400 300 T 900 150 T 1200 250" fill="none" stroke="#2A313C" stroke-width="4" stroke-opacity="0.5"/>
+      <path d="M -100 280 Q 200 220 500 420 T 1000 260 T 1200 380" fill="none" stroke="#D97706" stroke-width="3" stroke-opacity="0.3"/> <!-- Gold/Amber Ridge -->
+      <path d="M -100 360 Q 250 310 550 500 T 1050 380 T 1200 520" fill="none" stroke="#2A313C" stroke-width="4" stroke-opacity="0.5"/>
+      <path d="M -100 440 Q 300 400 600 580 T 1100 500 T 1200 660" fill="none" stroke="#D97706" stroke-width="2" stroke-opacity="0.2"/> <!-- Gold/Amber Ridge -->
+      <path d="M -100 520 Q 350 490 650 660 T 1150 620 T 1200 800" fill="none" stroke="#2A313C" stroke-width="4" stroke-opacity="0.4"/>
+    </pattern>
+
+    <!-- Aerospace-grade Metallic Steel Foreground Gradient -->
+    <linearGradient id="solidTitanium" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#CBD5E1" />
+      <stop offset="75%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- HIG Studio Soft Shadow -->
+    <filter id="higShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <!-- Element 1: Topographic Contour Mapping Background -->
+  <rect width="1024" height="1024" fill="url(#topoMapBase)"/>
+
+  <!-- Element 2: Signal Arch & Diamond Main Node -->
+  <path d="M 256 704 Q 512 192 768 704 M 512 600 L 552 640 L 512 680 L 472 640 Z" fill="none" stroke="url(#solidTitanium)" stroke-width="96" stroke-linecap="round" stroke-linejoin="round" filter="url(#higShadow)"/>
+</svg>

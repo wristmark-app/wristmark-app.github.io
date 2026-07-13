@@ -1,0 +1,6 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Element 1: Solid Background -->
+  <rect width="1024" height="1024" fill="#0D222B"/>
+  <!-- Element 2: Signal Arch & Core Dot Path -->
+  <path d="M 256 704 Q 512 192 768 704 M 511.9 704 L 512.1 704" fill="none" stroke="#00FFB2" stroke-width="96" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Deep Navy Blue Background -->
+  <rect width="1024" height="1024" fill="#081E3F" />
+  
+  <g id="magnet-top">
+    <path d="M 362,436 L 362,350 A 150,150 0 0 1 662,350 L 662,436" fill="none" stroke="#38BDF8" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+  <g id="mark-line">
+    <line x1="262" y1="512" x2="762" y2="512" stroke="#38BDF8" stroke-width="80" stroke-linecap="round" />
+  </g>
+  <g id="magnet-bottom">
+    <path d="M 362,588 L 362,674 A 150,150 0 0 0 662,674 L 662,588" fill="none" stroke="#38BDF8" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+</svg>

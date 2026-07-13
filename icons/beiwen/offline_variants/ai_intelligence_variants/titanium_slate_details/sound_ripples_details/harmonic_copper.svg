@@ -1,0 +1,45 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Base Darkroom Radials -->
+    <radialGradient id="chamberBase" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1E2028" />
+      <stop offset="100%" stop-color="#060709" />
+    </radialGradient>
+
+    <!-- Warm Copper & Crimson Voiceprint Spectrum Waves -->
+    <!-- Leverages multi-layer fills nested in one pattern to meet the strict 2-element rule -->
+    <pattern id="harmonicCopperMap" width="1024" height="1024" patternUnits="userSpaceOnUse">
+      <rect width="1024" height="1024" fill="url(#chamberBase)"/>
+      
+      <!-- Inside concentric ripples filled with warm, fiery thermal gradients to symbolize living sound energy -->
+      <!-- Rings are colored in copper-bronze spectrum representing active speaker frequencies -->
+      <!-- Inner Ring: Fire copper gradient -->
+      <circle cx="512" cy="640" r="160" fill="none" stroke="#D97706" stroke-width="4" stroke-opacity="0.35"/>
+      <!-- Mid-Low Ring: Terracotta clay red representing male vocal fundamentals -->
+      <circle cx="512" cy="640" r="280" fill="none" stroke="#DC2626" stroke-width="3" stroke-opacity="0.25"/>
+      <!-- Mid-High Ring: Desert Gold representing ambient soundscapes -->
+      <circle cx="512" cy="640" r="400" fill="none" stroke="#EAB308" stroke-width="2" stroke-opacity="0.2"/>
+      <!-- Outermost Ring: Pale Champagne representing ultra-high harmonics -->
+      <circle cx="512" cy="640" r="520" fill="none" stroke="#FDE047" stroke-width="1.5" stroke-opacity="0.15"/>
+    </pattern>
+
+    <!-- Aerospace-grade Metallic Steel Foreground Gradient -->
+    <linearGradient id="solidTitanium" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#CBD5E1" />
+      <stop offset="75%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- HIG Studio Soft Shadow -->
+    <filter id="higShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <!-- Element 1: Multi-Harmonic Hearth Bronze-Copper Rippling Background -->
+  <rect width="1024" height="1024" fill="url(#harmonicCopperMap)"/>
+
+  <!-- Element 2: Signal Arch & Diamond Main Node -->
+  <path d="M 256 704 Q 512 192 768 704 M 512 600 L 552 640 L 512 680 L 472 640 Z" fill="none" stroke="url(#solidTitanium)" stroke-width="96" stroke-linecap="round" stroke-linejoin="round" filter="url(#higShadow)"/>
+</svg>

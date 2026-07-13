@@ -1,0 +1,6 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Element 1: Solid Background -->
+  <rect width="1024" height="1024" fill="#0D222B"/>
+  <!-- Element 2: Base & Connection Nodes Path -->
+  <path d="M 320 192 H 704 A 128 128 0 0 1 832 320 V 704 A 128 128 0 0 1 704 832 H 320 A 128 128 0 0 1 192 704 V 320 A 128 128 0 0 1 320 192 Z M 320 512 H 704 M 512 320 V 704" fill="none" stroke="#00FFB2" stroke-width="72" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

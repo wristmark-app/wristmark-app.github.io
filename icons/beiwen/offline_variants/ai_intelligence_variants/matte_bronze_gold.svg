@@ -1,0 +1,28 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radial light background - creates soft, satin leather / frosted glass depth -->
+    <radialGradient id="bgGlow" cx="50%" cy="45%" r="75%">
+      <stop offset="0%" stop-color="#241E19" />
+      <stop offset="100%" stop-color="#080706" />
+    </radialGradient>
+    
+    <!-- Satin Antique Gold and Burnished Bronze Gradient (No AI Neon) -->
+    <linearGradient id="bronzeGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E7C4" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA7C11" />
+      <stop offset="100%" stop-color="#6B4A04" />
+    </linearGradient>
+
+    <!-- Subplus premium HIG drop-shadow filter to separate path from textured background -->
+    <filter id="higShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- Element 1: Soft Frosted Dark-Bronze Background -->
+  <rect width="1024" height="1024" fill="url(#bgGlow)"/>
+
+  <!-- Element 2: Signal Arch & Diamond In Satin Gold with Drop-Shadow -->
+  <path d="M 256 704 Q 512 192 768 704 M 512 600 L 552 640 L 512 680 L 472 640 Z" fill="none" stroke="url(#bronzeGold)" stroke-width="96" stroke-linecap="round" stroke-linejoin="round" filter="url(#higShadow)"/>
+</svg>

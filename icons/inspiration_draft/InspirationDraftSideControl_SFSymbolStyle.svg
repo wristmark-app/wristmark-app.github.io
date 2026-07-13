@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- InspirationDraft — Side Control Symbol Style -->
+  <!-- Derived from SendToInspirationDraft_SFSymbolStyle -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 120 900 C 230 900, 190 580, 370 580 C 530 580, 420 800, 540 740 C 600 710, 590 590, 490 540"
+          stroke-width="58"/>
+
+    <path d="M 720 80
+             C 720 241, 783 310, 930 310
+             C 783 310, 720 379, 720 540
+             C 720 379, 657 310, 510 310
+             C 657 310, 720 241, 720 80 Z"
+          fill="#FFFFFF" stroke="none"/>
+  </g>
+</svg>

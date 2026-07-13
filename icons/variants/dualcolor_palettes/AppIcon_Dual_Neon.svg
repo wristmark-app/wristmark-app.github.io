@@ -1,0 +1,17 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- 极深背景提供高对比度 -->
+  <rect width="1024" height="1024" fill="#09090B" />
+  
+  <g id="magnet-top">
+    <!-- 青蓝色 (Cyan): 代表持续、平稳的会议倾听与记录 -->
+    <path d="M 362,436 L 362,350 A 150,150 0 0 1 662,350 L 662,436" fill="none" stroke="#22D3EE" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+  <g id="mark-line">
+    <!-- 亮洋红色 (Magenta): 极高反差的视觉焦点，代表高光打点划线的那一瞬间 -->
+    <line x1="262" y1="512" x2="762" y2="512" stroke="#E81CFF" stroke-width="80" stroke-linecap="round" />
+  </g>
+  <g id="magnet-bottom">
+    <!-- 青蓝色 (Cyan): 保持与上半部分一致，维持“胶囊”的整体物理及视觉连贯性 -->
+    <path d="M 362,588 L 362,674 A 150,150 0 0 0 662,674 L 662,588" fill="none" stroke="#22D3EE" stroke-width="80" stroke-linecap="butt" stroke-linejoin="round" />
+  </g>
+</svg>

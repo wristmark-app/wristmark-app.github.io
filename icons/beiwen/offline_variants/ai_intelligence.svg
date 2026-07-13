@@ -1,0 +1,13 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium Gradient for Local Intelligence -->
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#C084FC" />
+    </linearGradient>
+  </defs>
+  <!-- Element 1: Polar Night Slate/Graphite Background -->
+  <rect width="1024" height="1024" fill="#0F172A"/>
+  <!-- Element 2: Signal Arch with Micro-Diamond AI Node -->
+  <path d="M 256 704 Q 512 192 768 704 M 512 600 L 552 640 L 512 680 L 472 640 Z" fill="none" stroke="url(#aiGrad)" stroke-width="96" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- InspirationDraft — AppIcon Dark Mode -->
+  <!-- Pure obsidian black background, richer glow for OLED/dark UI -->
+
+  <defs>
+    <filter id="charcoalTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.04 0" in="noise" result="coloredNoise"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="multiply" in="SourceGraphic" in2="coloredNoise"/>
+    </filter>
+
+    <!-- Deeper, richer warm center — more contrast on OLED black -->
+    <radialGradient id="bgDeep" cx="800" cy="220" r="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#261A08"/>
+      <stop offset="30%"  stop-color="#0E0E10"/>
+      <stop offset="100%" stop-color="#060608"/>
+    </radialGradient>
+
+    <filter id="naturalShadow" x="-100" y="-100" width="1224" height="1224" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="12" dy="20" stdDeviation="16" flood-color="#000000" flood-opacity="0.80"/>
+    </filter>
+    <filter id="glow44" x="-200" y="-200" width="1424" height="1424" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+    <filter id="glow16" x="-100" y="-100" width="1224" height="1224" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <!-- Deep obsidian background -->
+  <rect width="1024" height="1024" fill="url(#bgDeep)"/>
+  <rect width="1024" height="1024" fill="#0A0A0C" opacity="0.20" filter="url(#charcoalTexture)"/>
+
+  <!-- S-curve stroke — slightly brighter for dark contrast -->
+  <g filter="url(#naturalShadow)">
+    <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+          fill="none" stroke="#FFAC1A" stroke-width="154"
+          stroke-linecap="round" stroke-linejoin="round"
+          opacity="0.18" filter="url(#glow44)"/>
+    <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+          fill="none" stroke="#FFAC1A" stroke-width="81"
+          stroke-linecap="round" stroke-linejoin="round"
+          opacity="0.38" filter="url(#glow16)"/>
+    <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+          fill="none" stroke="#FFAC1A" stroke-width="45"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+          fill="none" stroke="#FFE8B0" stroke-width="17"
+          stroke-linecap="round" stroke-linejoin="round"
+          opacity="0.90"/>
+    <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+          fill="none" stroke="#FFFFFF" stroke-width="6"
+          stroke-linecap="round" stroke-linejoin="round"
+          opacity="0.75"/>
+  </g>
+
+  <!-- Diamond spark — enhanced brightness on pure dark background -->
+  <g filter="url(#naturalShadow)" transform="translate(800, 220) scale(1.4) translate(-740, -270)">
+    <path d="M 740 205 C 748 252, 762 264, 814 270 C 762 276, 748 288, 740 335 C 732 288, 718 276, 666 270 C 718 264, 732 252, 740 205 Z"
+          fill="#FFD60A" opacity="0.40" filter="url(#glow44)"/>
+    <path d="M 740 212 C 748 254, 754 264, 798 270 C 754 276, 748 286, 740 328 C 732 286, 726 276, 682 270 C 726 264, 732 254, 740 212 Z"
+          fill="#FFD60A"/>
+    <path d="M 740 232 C 746 256, 751 264, 778 270 C 751 276, 746 284, 740 308 C 734 284, 729 276, 702 270 C 729 264, 734 256, 740 232 Z"
+          fill="#FFF4BA"/>
+    <line x1="645" y1="270" x2="835" y2="270" stroke="#FFD60A" stroke-width="3" opacity="0.40" stroke-linecap="round"/>
+    <line x1="740" y1="175" x2="740" y2="365" stroke="#FFD60A" stroke-width="3" opacity="0.40" stroke-linecap="round"/>
+    <line x1="665" y1="270" x2="815" y2="270" stroke="#FFFFFF" stroke-width="1.2" opacity="0.85" stroke-linecap="round"/>
+    <line x1="740" y1="195" x2="740" y2="345" stroke="#FFFFFF" stroke-width="1.2" opacity="0.85" stroke-linecap="round"/>
+    <line x1="688" y1="218" x2="792" y2="322" stroke="#FFF4BA" stroke-width="1.8" opacity="0.35" stroke-linecap="round"/>
+    <line x1="792" y1="218" x2="688" y2="322" stroke="#FFF4BA" stroke-width="1.8" opacity="0.35" stroke-linecap="round"/>
+    <circle cx="740" cy="270" r="10" fill="#FFFFFF"/>
+    <circle cx="740" cy="270" r="4" fill="#FFFFFF" filter="url(#glow16)" opacity="0.95"/>
+  </g>
+</svg>

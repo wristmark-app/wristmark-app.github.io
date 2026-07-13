@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>时扣 WristMark - 手腕录音、离线转写与即将推出的本机离线 AI</title>
+  <meta name="description" content="专为开会、听课打造的私密会议助手。抬腕录音，互点两下秒记时间戳，本地离线转写，本机离线 AI 摘要即将推出。">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="site-nav">
+    <div style="font-weight: 700; letter-spacing: -0.02em; font-size: 1.2rem; display: flex; align-items: center; gap: 0.5rem;">
+      <img src="icons/variants/AppIcon_Default.svg" alt="WristMark Icon" style="width: 28px; height: 28px; border-radius: 6px;">
+      <span class="text-gradient" data-i18n="nav.brand">时扣 (WristMark)</span>
+      <span data-i18n="nav.badge" style="font-size: 0.6rem; font-weight: bold; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 12px; margin-left: 8px;">App Store</span>
+    </div>
+    <div class="nav-links" style="display: flex; gap: 1rem; align-items: center;">
+      <a href="support.html" data-i18n="nav.support">获得支持</a>
+      <a href="https://apps.apple.com/cn/app/%E6%97%B6%E6%89%A3/id6762519498" data-i18n="nav.download" data-app-store-link>下载</a>
+      <a href="legal/privacy.html" data-i18n="nav.privacy">隐私安全</a>
+      <button onclick="toggleLang()" style="background:none; border:1px solid rgba(255,255,255,0.4); color:white; border-radius:12px; padding:4px 8px; cursor:pointer;" id="lang-btn">English</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 class="text-gradient" data-i18n="hero.title">从手腕开始录音。<br>让重点自己留下。</h1>
+    <p data-i18n="hero.subtitle" style="font-size: 1.1rem;">
+      时扣是专为 iPhone 与智能手表打造的私密会议助手。抬腕录音，互点两下秒打时间戳，设备本地离线转写；本机离线 AI 摘要即将推出。
+    </p>
+    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2.5rem; flex-wrap: wrap;">
+      <a href="https://apps.apple.com/cn/app/%E6%97%B6%E6%89%A3/id6762519498" class="btn-primary" data-app-store-link>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.08-.46-2.07-.48-3.21 0-1.42.61-2.17.43-3.02-.35C2.93 15.33 3.64 7.8 9.1 7.52c1.33.07 2.25.73 3.02.78 1.15-.23 2.25-.89 3.5-.84 1.5.12 2.63.71 3.38 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.43 3.89ZM12.03 7.44c-.15-2.23 1.66-4.07 3.74-4.24.29 2.58-2.34 4.5-3.74 4.24Z"/></svg>
+        <span data-i18n="hero.primary-btn">前往 App Store 下载</span>
+      </a>
+      <a href="#workflow-preview" class="btn-secondary" data-i18n="hero.secondary-btn">了解核心体验</a>
+    </div>
+  </header>
+
+  <!-- Workflow Preview -->
+  <section id="workflow-preview" class="store-preview" aria-labelledby="workflow-preview-title">
+    <div class="section-kicker" data-i18n="store.kicker">核心体验</div>
+    <h2 id="workflow-preview-title" data-i18n="store.title">从手腕记录，到手机整理</h2>
+    <p data-i18n="store.subtitle">
+      时扣围绕一个清晰流程设计：在手表上开始录音，听到重点时标记，回到手机本地转写，再用你自己的 API 生成会议摘要；本机离线 AI 摘要即将推出。
+    </p>
+    <div class="store-screenshot-grid" aria-label="WristMark workflow">
+      <figure>
+        <img data-workflow-image="1" src="appstore/fancy-screenshots/output/zh-Hans/iphone-6.9-01.png" alt="时扣界面：抬腕开始会议录音" loading="lazy">
+        <figcaption data-i18n="store.slides.1">抬腕录音</figcaption>
+      </figure>
+      <figure>
+        <img data-workflow-image="2" src="appstore/fancy-screenshots/output/zh-Hans/iphone-6.9-02.png" alt="时扣界面：互点两下标记重点" loading="lazy">
+        <figcaption data-i18n="store.slides.2">重点标记</figcaption>
+      </figure>
+      <figure>
+        <img data-workflow-image="3" src="appstore/fancy-screenshots/output/zh-Hans/iphone-6.9-03.png" alt="时扣界面：本地离线转写" loading="lazy">
+        <figcaption data-i18n="store.slides.3">离线转写</figcaption>
+      </figure>
+      <figure>
+        <img data-workflow-image="4" src="appstore/fancy-screenshots/output/zh-Hans/iphone-6.9-04.png" alt="时扣界面：本机离线 AI 摘要" loading="lazy">
+        <figcaption data-i18n="store.slides.4">离线 AI 摘要</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Bento Grid Features (Values & Pain-points Oriented) -->
+  <section id="features" class="bento-container">
+
+    <!-- Watch Primary Feature -->
+    <div class="bento-card bento-item-large" style="display:flex; flex-direction:column;">
+      <span class="card-tag" style="display:flex; align-items:center; gap:0.3rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="6"/><polyline points="12 10 12 12 13 13"/><path d="m16.13 7.66-.81-4.05a2 2 0 0 0-2-1.61h-2.68a2 2 0 0 0-2 1.61l-.78 4.05"/><path d="m7.88 16.36.8 4a2 2 0 0 0 2 1.61h2.72a2 2 0 0 0 2-1.61l.81-4.05"/></svg> <span data-i18n="features.watch.tag">手表开录</span></span>
+      <h2 data-i18n="features.watch.title" style="font-size: 2rem; margin-bottom: 0.5rem; margin-top:0.3rem;">抬腕录音</h2>
+      <p style="color: var(--color-text-secondary); max-width: 90%; font-size: 0.95rem;" data-i18n="features.watch.desc">
+        开会、培训、电话沟通时不用掏手机。直接抬腕一键开启独立录音，双手仍然留给现场；结束后回到手机继续整理。
+      </p>
+      <div class="device-watch">
+        <div class="screen">
+          <img data-feature-image="watch" src="screenshoots/cn/aw_firstpage.png" alt="手表录音首页">
+        </div>
+      </div>
+    </div>
+
+    <!-- Security & Privacy -->
+    <div class="bento-card bento-item-medium" style="display:flex; flex-direction:column;">
+      <span class="card-tag" style="color: #AF52DE; display:flex; align-items:center; gap:0.3rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> <span data-i18n="features.privacy.tag">私密转写</span></span>
+      <h2 data-i18n="features.privacy.title" style="font-size: 1.6rem; margin-bottom: 0.5rem;">本地离线转写<br>音频不上传</h2>
+      <p style="color: var(--color-text-secondary); font-size: 0.95rem; flex-grow: 1;" data-i18n="features.privacy.desc">
+        语音转文字在设备本地完成，无需联网。会议音频不会发到时扣服务器，内部讨论和客户信息都留在你的设备上。
+      </p>
+      <div class="device-phone">
+        <div class="screen">
+          <img data-feature-image="privacy" src="screenshoots/cn/phone_settings_dark.png" alt="AI 设置界面">
+        </div>
+      </div>
+    </div>
+
+    <!-- Merging Feature -->
+    <div class="bento-card bento-item-medium" style="display:flex; flex-direction:column; justify-content: space-between;">
+      <div>
+        <span class="card-tag" style="color: #FF9500; display:flex; align-items:center; gap:0.3rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2"/></svg> <span data-i18n="features.merge.tag">重点回放</span></span>
+        <h2 data-i18n="features.merge.title" style="font-size: 1.6rem; margin-bottom: 0.5rem;">互点两下<br>记住关键时刻</h2>
+        <p style="color: var(--color-text-secondary); font-size: 0.95rem;" data-i18n="features.merge.desc">
+          听到决策、报价、任务分配或确认信息时，互点两下秒打时间戳。回放时点击重点直接跳到那一刻，不再拖着进度条找答案。
+        </p>
+      </div>
+      <div class="device-watch feature-merge-watch">
+        <div class="screen">
+          <img data-feature-image="merge" src="screenshoots/cn/aw_recording.png" alt="手表录音中界面">
+        </div>
+      </div>
+    </div>
+
+    <!-- Phone Import Feature -->
+    <div class="bento-card bento-item-large" style="display: flex; align-items: center; gap: 2rem;">
+      <div style="flex:1;">
+        <span class="card-tag" style="color: #34C759; display:flex; align-items:center; gap:0.3rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg> <span data-i18n="features.import.tag">离线 AI 纪要 · 即将推出</span></span>
+        <h2 data-i18n="features.import.title" style="font-size: 2rem; margin-bottom: 0.5rem;">本机离线 AI 摘要即将推出</h2>
+        <p style="color: var(--color-text-secondary); font-size: 0.95rem;" data-i18n="features.import.desc">
+          本机 AI 模型下载与设备端摘要能力正在准备中。当前版本可继续使用自己配置的 OpenAI 兼容端点生成摘要。
+        </p>
+      </div>
+      <div class="device-phone feature-side-phone">
+        <div class="screen">
+          <img data-feature-image="import" src="screenshoots/cn/phone_settings_dark.png" alt="私有 AI 设置界面">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer style="margin-top: 4rem; padding: 3rem 0; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
+    <div style="display:flex; justify-content:center; gap:1.5rem; margin-bottom: 1.5rem; font-size:0.9rem;">
+      <a href="legal/privacy.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">隐私政策 (Privacy)</a>
+      <a href="legal/terms.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">使用条款 (Terms)</a>
+      <a href="https://apps.apple.com/cn/app/%E6%97%B6%E6%89%A3/id6762519498" data-app-store-link style="color:rgba(255,255,255,0.6); text-decoration:none;">App Store</a>
+      <a href="support.html" style="color:rgba(255,255,255,0.6); text-decoration:none;">应用支持 (Support)</a>
+    </div>
+    <a href="https://smollaunch.com" target="_blank" rel="noopener" style="display:inline-block; margin-bottom:1.5rem;">
+      <img src="https://smollaunch.com/badges/featured.svg" alt="WristMark — Featured on Smol Launch" loading="lazy" width="250" height="60">
+    </a>
+    <div style="font-size: 0.8rem; opacity: 0.4;">
+      &copy; 2026 WristMark. All rights reserved.<br>iPhone is a trademark of Apple Inc., registered in the U.S. and other countries.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Base Radial Gradient for Darkroom Atmosphere -->
+    <radialGradient id="precisionBase" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1E222A" />
+      <stop offset="100%" stop-color="#0B0D11" />
+    </radialGradient>
+
+    <!-- Masterful Technical Grid Pattern to symbolize Structured Offline Guides -->
+    <pattern id="technicalGrid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M 64 0 L 0 0 0 64" fill="none" stroke="#2D3748" stroke-width="2" stroke-opacity="0.4"/>
+      <circle cx="0" cy="0" r="3" fill="#3D4D61" fill-opacity="0.5"/>
+    </pattern>
+
+    <!-- Aerospace-grade Metallic Steel Foreground Gradient -->
+    <linearGradient id="solidTitanium" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="40%" stop-color="#CBD5E1" />
+      <stop offset="75%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Deep Dramatic Drop Shadow for Floatation Depth -->
+    <filter id="floatShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+  </defs>
+
+  <!-- Element 1: Combined Base & Tech-Grid Coordinate Overlay Map -->
+  <!-- We stack the base gradient and the technical grid fill using SVG paint chaining/masking techniques or a overlay rect. Wait, since we are strictly limiting to "max two elements" at the root level, we can paint a single rect using a neat trick, or we can use another nested svg pattern. To keep it 100% standard and 2 elements: we use a pattern that has a rect inside its defs, but a cleaner way is just filling with pattern. Let's make the pattern itself contain the solid background color! That way, filling a single rect with 'url(#technicalGrid)' draws both the solid color and the grids! -->
+  
+  <!-- To do this, we modify the pattern to have its own background color. Brilliant! -->
+  <pattern id="compositeTechGrid" width="64" height="64" patternUnits="userSpaceOnUse">
+    <!-- Solid base tile inside pattern -->
+    <rect width="64" height="64" fill="#0B0D11"/>
+    <!-- Subtle center glow replication in tiles using a radial overlay inside pattern, or simple color variations -->
+    <path d="M 64 0 L 0 0 0 64" fill="none" stroke="#1E293B" stroke-width="2" stroke-opacity="0.8"/>
+    <!-- Tiny crosshair dots at intersections representing reliable data coordinates -->
+    <circle cx="0" cy="0" r="2" fill="#475569" fill-opacity="0.6"/>
+  </pattern>
+
+  <rect width="1024" height="1024" fill="url(#compositeTechGrid)"/>
+
+  <!-- Element 2: Signal Arch & Diamond Main Node -->
+  <path d="M 256 704 Q 512 192 768 704 M 512 600 L 552 640 L 512 680 L 472 640 Z" fill="none" stroke="url(#solidTitanium)" stroke-width="96" stroke-linecap="round" stroke-linejoin="round" filter="url(#floatShadow)"/>
+</svg>

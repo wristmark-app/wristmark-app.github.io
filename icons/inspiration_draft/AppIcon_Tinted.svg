@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- InspirationDraft — AppIcon Tinted -->
+  <!-- Pure black background + white-only foreground -->
+  <!-- iOS tint engine will colorize the white shapes with the user's chosen tint -->
+
+  <defs>
+    <filter id="glow44" x="-200" y="-200" width="1424" height="1424" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+    <filter id="glow16" x="-100" y="-100" width="1224" height="1224" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="16"/>
+    </filter>
+  </defs>
+
+  <!-- Pure black background (tint engine requirement) -->
+  <rect width="1024" height="1024" fill="#000000"/>
+
+  <!-- S-curve stroke — white only, tint engine will colorize -->
+  <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+        fill="none" stroke="#FFFFFF" stroke-width="154"
+        stroke-linecap="round" stroke-linejoin="round"
+        opacity="0.12" filter="url(#glow44)"/>
+  <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+        fill="none" stroke="#FFFFFF" stroke-width="81"
+        stroke-linecap="round" stroke-linejoin="round"
+        opacity="0.28" filter="url(#glow16)"/>
+  <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+        fill="none" stroke="#FFFFFF" stroke-width="45"
+        stroke-linecap="round" stroke-linejoin="round"
+        opacity="0.90"/>
+  <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+        fill="none" stroke="#FFFFFF" stroke-width="17"
+        stroke-linecap="round" stroke-linejoin="round"
+        opacity="0.70"/>
+  <path d="M 240 720 C 360 720, 320 440, 480 440 C 640 440, 520 680, 720 600 C 820 560, 800 360, 680 320"
+        fill="none" stroke="#FFFFFF" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round"
+        opacity="0.50"/>
+
+  <!-- Diamond spark — white only -->
+  <g transform="translate(800, 220) scale(1.4) translate(-740, -270)">
+  <path d="M 740 205 C 748 252, 762 264, 814 270 C 762 276, 748 288, 740 335 C 732 288, 718 276, 666 270 C 718 264, 732 252, 740 205 Z"
+        fill="#FFFFFF" opacity="0.25" filter="url(#glow44)"/>
+  <path d="M 740 212 C 748 254, 754 264, 798 270 C 754 276, 748 286, 740 328 C 732 286, 726 276, 682 270 C 726 264, 732 254, 740 212 Z"
+        fill="#FFFFFF" opacity="0.90"/>
+  <path d="M 740 232 C 746 256, 751 264, 778 270 C 751 276, 746 284, 740 308 C 734 284, 729 276, 702 270 C 729 264, 734 256, 740 232 Z"
+        fill="#FFFFFF"/>
+  <line x1="645" y1="270" x2="835" y2="270" stroke="#FFFFFF" stroke-width="3" opacity="0.30" stroke-linecap="round"/>
+  <line x1="740" y1="175" x2="740" y2="365" stroke="#FFFFFF" stroke-width="3" opacity="0.30" stroke-linecap="round"/>
+  <line x1="665" y1="270" x2="815" y2="270" stroke="#FFFFFF" stroke-width="1.2" opacity="0.60" stroke-linecap="round"/>
+  <line x1="740" y1="195" x2="740" y2="345" stroke="#FFFFFF" stroke-width="1.2" opacity="0.60" stroke-linecap="round"/>
+  <circle cx="740" cy="270" r="10" fill="#FFFFFF"/>
+  </g>
+</svg>

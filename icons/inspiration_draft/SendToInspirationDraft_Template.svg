@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- InspirationDraft — SendToInspirationDraft Template -->
+  <!-- 4-pointed sparkle star (dominant) + S-curve (accent), transparent bg, white, no glow -->
+  <!-- Star: concave arms via axis-aligned control points → sharp needle tips -->
+  <!-- s=0.3: each cp lies 30% along its own arm axis toward center -->
+
+  <!-- S-curve: smaller accent, lower-left, clearly separate from star -->
+  <path d="M 120 900 C 230 900, 190 580, 370 580 C 530 580, 420 800, 540 740 C 600 710, 590 590, 490 540"
+        fill="none" stroke="#FFFFFF" stroke-width="58"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 4-pointed sparkle star, center (720,310), arms ±230v ±210h -->
+  <!-- Each cubic segment: cp1 along start-arm axis toward center, cp2 along end-arm axis toward center -->
+  <!-- Creates cusps at tips (sharp points) and concave arms -->
+  <path d="M 720 80
+           C 720 241, 783 310, 930 310
+           C 783 310, 720 379, 720 540
+           C 720 379, 657 310, 510 310
+           C 657 310, 720 241, 720 80 Z"
+        fill="#FFFFFF"/>
+</svg>
