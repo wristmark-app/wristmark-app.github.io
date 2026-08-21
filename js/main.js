@@ -9,14 +9,14 @@ const translations = {
     },
     hero: {
       title: "从手腕开始录音。<br>让重点自己留下。",
-      subtitle: "时扣是专为 iPhone 与智能手表打造的私密会议助手。抬腕录音，互点两下秒打时间戳，设备本地离线转写；本机离线 AI 摘要即将推出。",
+      subtitle: "时扣是专为 iPhone 与智能手表打造的私密会议助手。抬腕录音，互点两下秒打时间戳，设备本地离线转写，并把会议纪要变成下一步行动。",
       "primary-btn": "前往 App Store 下载",
       "secondary-btn": "了解核心体验"
     },
     store: {
       kicker: "核心体验",
       title: "从手腕记录，到手机整理",
-      subtitle: "时扣围绕一个清晰流程设计：在手表上开始录音，听到重点时标记，回到手机本地转写，再用你自己的 API 生成会议摘要；本机离线 AI 摘要即将推出。",
+      subtitle: "时扣围绕一个清晰流程设计：在手表上开始录音，听到重点时标记，回到手机本地转写，再生成会议纪要并整理后续行动。",
       slides: {
         1: "抬腕录音",
         2: "重点标记",
@@ -41,9 +41,19 @@ const translations = {
         desc: "听到决策、报价、任务分配或确认信息时，互点两下秒打时间戳。回放时点击重点直接跳到那一刻，不再拖着进度条找答案。"
       },
       import: {
-        tag: "离线 AI 纪要 · 即将推出",
-        title: "本机离线 AI 摘要即将推出",
-        desc: "本机 AI 模型下载与设备端摘要能力正在准备中。当前版本可继续使用自己配置的 OpenAI 兼容端点生成摘要。"
+        tag: "会议行动整理",
+        title: "从纪要到下一步行动",
+        desc: "用本机 Local AI 或你配置的 AI 端点生成纪要，再把负责人、截止时间和安排整理成可编辑的后续事项。"
+      },
+      reminders: {
+        tag: "后续提醒",
+        title: "别让会议决定停在纪要里",
+        desc: "从会议纪要生成可编辑提醒，确认负责人和截止时间后再保存，让下一步真正有人跟进。"
+      },
+      calendar: {
+        tag: "日历草稿",
+        title: "先检查，再放进日历",
+        desc: "将会议中的时间安排整理为日历草稿，检查时间与参与人，只保存真正需要的日程。"
       }
     }
   },
@@ -57,14 +67,14 @@ const translations = {
     },
     hero: {
       title: "Record from your wrist.<br>Keep every key moment.",
-      subtitle: "WristMark is a private meeting companion for iPhone and your watch. Record from your wrist, tap to timestamp key moments, and transcribe offline on device. On-device offline AI summaries are coming soon.",
+      subtitle: "WristMark is a private meeting companion for iPhone and your watch. Record from your wrist, tap to timestamp key moments, transcribe offline on device, and turn meeting notes into next steps.",
       "primary-btn": "Download on the App Store",
       "secondary-btn": "Explore the Workflow"
     },
     store: {
       kicker: "Core Workflow",
       title: "The whole flow: wrist recording to private notes",
-      subtitle: "WristMark is built around one clear flow: start recording on your watch, mark key moments as they happen, return to iPhone for offline transcription, then summarize with your own API. On-device offline AI summaries are coming soon.",
+      subtitle: "WristMark is built around one clear flow: start recording on your watch, mark key moments as they happen, return to iPhone for offline transcription, then turn the meeting summary into follow-ups.",
       slides: {
         1: "Wrist recording",
         2: "Instant marks",
@@ -89,9 +99,19 @@ const translations = {
         desc: "When a decision, quote, or action item appears, use a quick gesture on your watch to plant a timestamp. During playback, jump to that exact moment in one tap."
       },
       import: {
-        tag: "Offline AI notes · Coming soon",
-        title: "On-device AI summaries are coming soon",
-        desc: "Local model downloads and on-device summaries are being prepared. The current release can still use your own OpenAI-compatible endpoint for summaries."
+        tag: "Actionable meeting notes",
+        title: "Turn meeting notes into next steps",
+        desc: "Generate notes with on-device Local AI or your configured endpoint, then turn owners, due dates, and plans into editable follow-ups."
+      },
+      reminders: {
+        tag: "Follow-up reminders",
+        title: "Keep decisions moving after the meeting",
+        desc: "Create editable reminders from your meeting summary, confirm the owner and due date, then save the next step."
+      },
+      calendar: {
+        tag: "Calendar drafts",
+        title: "Review first, then add to your calendar",
+        desc: "Turn scheduling details from a meeting into calendar drafts, review the time and attendees, and save only what you need."
       }
     }
   }
@@ -106,12 +126,12 @@ const appStoreLinks = {
 
 const pageMeta = {
   zh: {
-    title: "时扣 WristMark - 手腕录音、离线转写与即将推出的本机离线 AI",
-    description: "专为开会、听课打造的私密会议助手。抬腕录音，互点两下秒记时间戳，本地离线转写，本机离线 AI 摘要即将推出。"
+    title: "时扣 WristMark - 手腕录音、离线转写与会议行动整理",
+    description: "专为开会、听课打造的私密会议助手。抬腕录音，标记重点，本地离线转写，并将会议纪要整理为提醒与日历草稿。"
   },
   en: {
-    title: "WristMark - Wrist Recording, Offline Transcription, and On-Device AI Coming Soon",
-    description: "A private meeting companion for iPhone and your watch. Record from your wrist, tap to timestamp, transcribe offline, and get on-device AI summaries soon."
+    title: "WristMark - Wrist Recording, Offline Transcription, and Actionable Meeting Notes",
+    description: "A private meeting companion for iPhone and your watch. Record from your wrist, mark key moments, transcribe offline, and turn meeting notes into reminders and calendar drafts."
   }
 };
 
