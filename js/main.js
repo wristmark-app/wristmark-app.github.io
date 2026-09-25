@@ -2,7 +2,6 @@ const translations = {
   zh: {
     nav: {
       brand: "时扣 (WristMark)",
-      badge: "App Store",
       support: "获得支持",
       download: "下载",
       privacy: "隐私安全"
@@ -60,7 +59,6 @@ const translations = {
   en: {
     nav: {
       brand: "WristMark",
-      badge: "App Store",
       support: "Support",
       download: "Download",
       privacy: "Privacy"
