@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <title>Privacy Policy - WristMark</title>
   <link rel="stylesheet" href="../css/style.css">
   <style>
     body { padding: 4rem 2rem; max-width: 800px; margin: 0 auto; }
     h1 { font-size: 2.5rem; margin-bottom: 2rem; }
-    h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: #fff; }
-    p { color: rgba(255,255,255,0.7); margin-bottom: 1rem; line-height: 1.6; }
+    h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--color-text-primary); }
+    p { color: var(--color-text-secondary); margin-bottom: 1rem; line-height: 1.6; }
     a { color: #007aff; }
   </style>
 </head>
@@ -26,7 +27,7 @@
   <h2>2. Optional Third-Party AI Integration</h2>
   <p>WristMark includes an optional AI feature that you can activate by configuring your own Base URL, API Key, and model in the app's Settings. This feature is entirely user-initiated — you choose if, when, and which endpoint to use.</p>
   <p>When you use AI summarization, transcript polish, or automatic recording-type classification, the app sends the following text to the Base URL you configured:</p>
-  <ul style="color: rgba(255,255,255,0.7); margin-bottom: 1rem; line-height: 1.6; padding-left: 1.5rem;">
+  <ul style="color: var(--color-text-secondary); margin-bottom: 1rem; line-height: 1.6; padding-left: 1.5rem;">
     <li>Transcript text from your meeting</li>
     <li>Timestamp markers you placed during the meeting</li>
     <li>Meeting duration and recording type</li>
